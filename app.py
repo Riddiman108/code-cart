@@ -15,6 +15,10 @@ def blog():
 def contact():
     return render_template('contact.html')
 
+@app.route('/tools')
+def tools():
+    return render_template('tools.html')
+
 if __name__ == '__main__':
     import os
     port = int(os.environ.get("PORT", 5000))
